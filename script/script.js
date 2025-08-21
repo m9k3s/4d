@@ -32,3 +32,17 @@ for(let a= 0;a < 100 ;a++)
 {
     console.log(random_4d_number())
 }
+
+function generete_1()
+{
+    let number
+    let result = document.getElementById("result")
+    number = random_4d_number()
+    let p = document.createElement("P")
+    p.innerText = number
+    result.innerHTML = " "
+    result.appendChild(p)
+}
+
+let one = document.getElementById("one")
+one.addEventListener("click",generete_1)
