@@ -24,7 +24,7 @@ header H1
 nav ul
 {
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
     list-style:none;
     justify-content:space-evenly;
     margin:1em;
@@ -34,6 +34,7 @@ nav ul
 {
     display:flex;
     justify-content:center;
+    flex-direction:column;
     align-items:center; 
     
 }
@@ -41,6 +42,19 @@ nav ul
 {
     margin:1em;
     font-size:200px;
+}
+
+#top_3
+{
+    padding:10px;
+}
+
+#first_10
+{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    row-gap:10px;
+    column-gap:50px;
 }
 
 

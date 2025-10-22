@@ -28,11 +28,6 @@ function random_4d_number()
 }
 
 
-for(let a= 0;a < 100 ;a++)
-{
-    console.log(random_4d_number())
-}
-
 function generete_1()
 {
     let number
@@ -44,5 +39,45 @@ function generete_1()
     result.appendChild(p)
 }
 
+function generate_13()
+{
+    let all_number = []
+    for(let a =0;a<13;a++)
+    {
+        all_number.push(random_4d_number())
+        //console.log(random_4d_number())
+    }
+    console.log(all_number)
+
+    let result = document.getElementById("result")
+    let ol_top3 = document.createElement("ol")
+    ol_top3.id = "top_3"
+    let ol_first_10 = document.createElement("ol")
+    ol_first_10.id = "first_10"
+
+    for (let a = 0;a<3;a++)
+    {
+        let li = document.createElement("li")
+        li.textContent = all_number[a]
+        ol_top3.appendChild(li)
+    }
+
+    for(let a = 3;a<13;a++)
+    {
+        let li = document.createElement("li")
+        li.textContent =all_number[a]
+        ol_first_10.appendChild(li)
+
+    }
+
+    result.innerHTML = " "
+    result.appendChild(ol_top3)
+    result.appendChild(ol_first_10)
+
+}
+
 let one = document.getElementById("one")
 one.addEventListener("click",generete_1)
+
+let all = document.getElementById("all")
+all.addEventListener("click",generate_13)
