@@ -47,14 +47,18 @@ nav ul
 #top_3
 {
     padding:10px;
+    font-size:50px;
 }
 
-#first_10
+#first_10 ,#second_10
 {
     display:grid;
     grid-template-columns:repeat(5,1fr);
     row-gap:10px;
-    column-gap:50px;
+    column-gap:160px;
+    padding:10px;
+    font-size:50px;
+    list-style: none;
 }
 
 
