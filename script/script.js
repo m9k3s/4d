@@ -52,18 +52,21 @@ function generate_all()
     let result = document.getElementById("result")
     let h2_top3 = document.createElement("h2")
     h2_top3.textContent = "Top 3"
+    h2_top3.id = "h2_top3"
     let ol_top3 = document.createElement("ol")
     ol_top3.id = "top_3"
 
     let h2_first_10 = document.createElement("h2")
     h2_first_10.textContent = "First 10"
+    h2_first_10.id = "h2_first_10"
 
     let ol_first_10 = document.createElement("ol")
     ol_first_10.id = "first_10"
 
     let h2_second_10 = document.createElement("h2")
     h2_second_10.textContent = "Second 10"
-
+    h2_second_10.id = "h2_second_10"
+    
     let ol_second_10 = document.createElement("ol")
     ol_second_10.id = "second_10"
 

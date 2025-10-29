@@ -6,7 +6,7 @@
 
 body
 {
-    background-color:white;
+    background-color:#EAE4D5
 }
 
 header
@@ -28,6 +28,7 @@ nav ul
     list-style:none;
     justify-content:space-evenly;
     margin:1em;
+    font-size:20px;
 }
 
 #result
@@ -44,6 +45,14 @@ nav ul
     font-size:200px;
 }
 
+#h2_top3,#h2_first_10,#h2_second_10
+{
+    background-color:#B6B09F;
+    width:100%;
+    font-size:30px;
+    text-align: center;
+    padding:5px;
+}
 #top_3
 {
     padding:10px;
