@@ -6,7 +6,10 @@
 
 body
 {
-    background-color:#EAE4D5
+    background-color:#EAE4D5;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
 
 header
@@ -28,7 +31,17 @@ nav ul
     list-style:none;
     justify-content:space-evenly;
     margin:1em;
-    font-size:20px;
+    font-size:25px;
+}
+nav ul li:hover
+{
+    color :purple;
+    text-decoration: underline;
+}
+
+main
+{
+    flex:1;
 }
 
 #result
@@ -36,8 +49,9 @@ nav ul
     display:flex;
     justify-content:center;
     flex-direction:column;
-    align-items:center; 
-    
+    align-items:center;
+    width:100%;
+
 }
 #result p
 {
@@ -48,10 +62,11 @@ nav ul
 #h2_top3,#h2_first_10,#h2_second_10
 {
     background-color:#B6B09F;
-    width:100%;
     font-size:30px;
     text-align: center;
-    padding:5px;
+    padding:10px 0;
+    width:100%;
+    
 }
 #top_3
 {
@@ -64,10 +79,17 @@ nav ul
     display:grid;
     grid-template-columns:repeat(5,1fr);
     row-gap:10px;
-    column-gap:160px;
+    column-gap:100px;
     padding:10px;
     font-size:50px;
-    list-style: none;
+    list-style:none;
+    
 }
 
-
+footer
+{
+    
+    background-color: black;
+    color:white;
+    padding:30px;
+}
